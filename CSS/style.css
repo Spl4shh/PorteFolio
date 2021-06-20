@@ -1,32 +1,9 @@
+/*******************************GENERAL************************************/
+
 body
 {
     margin: 0;
-    padding-bottom: 15px v;
-}
-
-.header_accueil
-{
-    text-align: center;
-    background : linear-gradient(to top, rgb(247, 153, 119), rgb(189, 92, 57));
-    padding-bottom: 10px;
-    
-}
-
-.image_accueil
-{
-    border-radius: 45px;
-    margin: 10px;
-}
-
-.page_body
-{
-    background-color: rgba(243, 179, 156, 0.527);
-}
-
-.title 
-{
-    font-size: 50px;
-    margin: 0;
+    padding-bottom: 15px;
 }
 
 .navi_bar
@@ -83,6 +60,34 @@ body
         font-size: 20px;
     }
 
+/*******************************GENERAL************************************/
+/*******************************ACCUEIL************************************/
+
+.header_accueil
+{
+    text-align: center;
+    background : linear-gradient(to top, rgb(247, 153, 119), rgb(189, 92, 57));
+    padding-bottom: 10px;
+    
+}
+
+.image_accueil
+{
+    border-radius: 45px;
+    margin: 10px;
+}
+
+.page_body
+{
+    background-color: rgba(243, 179, 156, 0.527);
+}
+
+.title 
+{
+    font-size: 50px;
+    margin: 0;
+}
+
 .article1, .article2
 {
     display: flex;
@@ -112,7 +117,7 @@ body
     margin-right: auto;
     width: 75%;
     text-align: justify;
-    background-color: rgba(214, 156, 135, 0.527);
+    background-color: rgba(214, 156, 135, 0.5);
     border-radius: 10px;
     padding: 10px;
     transition: all 0.5s
@@ -142,3 +147,28 @@ body
     {
         background-color: rgb(190, 137, 118);
     }
+
+
+/*******************************ACCUEIL************************************/
+/*******************************A PROPOS************************************/
+
+.container_general
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.colonne_gauche
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(214, 156, 135, 0.5);
+}
+
+.colonne_droite
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(214, 156, 135, 0.5);
+}
