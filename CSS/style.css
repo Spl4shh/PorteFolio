@@ -145,6 +145,8 @@ body
     .bouton:hover
     {
         background-color: rgb(190, 137, 118);
+        animation: oscillate 1s infinite;
+                                                                                                                    /* DEVRAIT FONCTIONNER BORDEL DE MERDE*/
     }
 
 
@@ -174,3 +176,62 @@ body
     margin: 25px;
     text-align: center;
 }
+
+
+/*******************************A PROPOS************************************/
+/*******************************MES PROJETS************************************/
+
+.container_projet
+{
+    background-color: rgb(230, 180, 162);
+    border-radius: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    max-width: 75% ;
+    text-align: justify;
+}
+
+.text_container
+{
+    font-size: 19px;
+    line-height: 133% ;
+}
+
+.titre_container
+{
+    background: radial-gradient(rgba(221, 135, 104, 0.6), rgba(230, 161, 136, 0));    
+    font-size: 30px;
+    margin: 15px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 27px;
+    padding: 10px;
+}
+/*******************************MES PROJETS************************************/
+/*******************************ME CONTACTER************************************/
+
+
+
+/*******************************ME CONTACTER************************************/
+/*******************************KEYFRAME************************************/
+
+
+@keyframes oscillate
+    {   0%
+        {
+            transform: rotate(-70deg);
+        }
+        50%
+        {
+            transform: rotate(-20deg);
+        }
+        100%
+        {
+            transform: rotate(-70deg);
+        }
+    }
+
