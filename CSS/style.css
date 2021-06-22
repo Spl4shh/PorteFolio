@@ -16,6 +16,7 @@ body
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1;
 }
 
 .navi_element
@@ -86,26 +87,15 @@ body
     margin: 0;
 }
 
-.article_gauche, .article_droite
+.bloc_accueil
 {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin-top: 5px;
     margin-bottom: 5px;
-}
-
-.article_gauche
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.article_droite
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    
 }
 
 .article_text 
@@ -140,12 +130,22 @@ body
     border-radius: 10px;        
     border: 2px solid rgb(190, 137, 118);
     transition: background-color 0.5s;
+    z-index: 0;
 }
-    .bouton:hover
+    .bouton:hover 
     {
         background-color: rgb(190, 137, 118);
         animation: oscillate 1s infinite;
-                                                                                                                    /*DEVRAIT FONCTIONNER BORDEL DE MERDE*/
+    }
+
+    .contenu_bouton
+    {
+        text-decoration: none;
+    }
+
+    .bouton a:visited
+    {
+        color: black;
     }
 
 
@@ -225,7 +225,7 @@ body
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 25px;
     font-size: 30px;
 }
@@ -274,19 +274,18 @@ body
 /*******************************ME CONTACTER************************************/
 /*******************************KEYFRAME************************************/
 
-
 @keyframes oscillate
     {   0%
         {
-            transform: rotate(-70deg);
+            transform: rotate(12deg);
         }
         50%
         {
-            transform: rotate(-20deg);
+            transform: rotate(-12deg);
         }
         100%
         {
-            transform: rotate(-70deg);
+            transform: rotate(12deg);
         }
     }
 
