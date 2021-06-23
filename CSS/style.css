@@ -201,14 +201,15 @@ body
 
 .titre_container
 {
-    background: radial-gradient(rgba(221, 135, 104, 0.6), rgba(230, 161, 136, 0));    
+    position: sticky;
+    background: linear-gradient(to bottom, rgb(230, 180, 162), rgba(230, 180, 162, 0.8));
     font-size: 35px;
     margin: 15px;
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 27px;
+    top : 30px;
+    width: 101%;
+    margin-left: -15px;
     padding: 10px;
+    text-align: center;
 }
 
 #img_projet_web
@@ -234,17 +235,6 @@ body
     flex-direction: column;
     justify-content: space-between;
     margin-top: -15%;
-}
-
-.container_projet h2
-{
-    position: sticky;
-    top : 30px;
-    background: linear-gradient(to bottom, rgb(230, 180, 162), rgba(230, 180, 162, 0.8));
-    text-align: center;
-    width: 101%;
-    margin-left: -15px;
-    border-radius: 0;
 }
 /*******************************MES PROJETS************************************/
 /*******************************ME CONTACTER************************************/
