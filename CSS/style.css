@@ -151,7 +151,7 @@ body
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .general_colonne
@@ -159,6 +159,7 @@ body
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    width: 50%;
 }
 
 .general_container_colonne
@@ -169,6 +170,7 @@ body
     padding: 10px;
     margin: 25px;
     text-align: center;
+    list-style-position: inside;
 }
 
 
