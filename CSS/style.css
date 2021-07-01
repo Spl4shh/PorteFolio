@@ -214,7 +214,6 @@ body
     font-size: 35px;
     margin: 15px;
     top : 30px;
-    width: 101%;
     margin-left: -15px;
     padding: 10px;
     text-align: center;
@@ -249,43 +248,59 @@ body
 
 .logo_page_contact
 {
-    max-width: 200px;
+    width: 200px;
+    height: 200px;
     border-radius: 10px;
     margin: 14px;
 }
 
-.ligne_contact
+.colonne_contact
 {
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-around;
-    margin: 25px;
-    font-size: 30px;
 }
 
-.ligne_contact a
+.colonne_image
 {
-    transition: background-color 0.5s, box-shadow 0.5s;
-    text-decoration: none;
-    color: black;
+    display: flex;
+    flex-direction: column;
 }
-    .ligne_contact a:hover 
-    {
-        background-color: rgba(0, 0, 0, 0.1);
-        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    }
 
-    .ligne_contact a:visited
-    {
-        color: black;
-    }
+.colonne_gauche
+{
+    display: flex;
+    flex-direction: row;
+}
 
-.ligne_contact span
+.colonne_titre
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.colonne_titre p, .colonne_droite p
+{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    margin : 14px;
+    font-size: 30px;
+    text-align : left;
+    align-items: center;
+}
+
+.colonne_droite 
+{
+    display: flex;
+    flex-direction : column;
+}
+
+.colonne_droite span
 {
     position: absolute;
     margin-top: 35px;
-    right: 60px;
+    right: 250px;
     color:rgb(189, 92, 57);
     background:rgb(230, 191, 171);
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
@@ -294,17 +309,28 @@ body
     opacity:0;
     transition: all 0.25s
 }
-    .ligne_contact a:hover span
+    .colonne_droite a:hover span
     {
         opacity:1;
     }
 
-.icon_nom
+.colonne_droite a
 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    transition: background-color 0.5s, box-shadow 0.5s;
+    text-decoration: none;
+    color: black;
 }
+
+    .colonne_droite a:hover 
+    {
+        background-color: rgba(0, 0, 0, 0.1);
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    .colonne_droite a:visited
+    {
+        color: black;
+    }
 /*******************************ME CONTACTER************************************/
 /*******************************KEYFRAME************************************/
 
@@ -322,4 +348,3 @@ body
             transform: rotate(-6deg);
         }
     }
-
