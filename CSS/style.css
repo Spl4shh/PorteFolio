@@ -193,18 +193,13 @@ body
     margin-right: auto;
     padding: 20px;
     max-width: 75% ;
-    text-align: justify;
 }
 
-.text_container
+.text_projet
 {
     font-size: 25px;
-    line-height: 133% ;
-}
-
-.ligne_liste
-{
-    font-size: 25px;
+    line-height: 133%;
+    text-align : justify;
 }
 
 .titre_container
@@ -212,6 +207,7 @@ body
     position: sticky;
     background: linear-gradient(to bottom, rgb(230, 180, 162), rgba(230, 180, 162, 0.8));
     font-size: 35px;
+    width: 101%;
     margin: 15px;
     top : 30px;
     margin-left: -15px;
@@ -219,10 +215,20 @@ body
     text-align: center;
 }
 
+.img_projet
+{
+    max-width: 75%;
+    border-radius: 25px;
+}
+
 #img_projet_web
 {
     width: 50%;
-    border-radius: 25px;
+}
+
+#img_projet_c1
+{
+    width: 50%;
 }
 
 #bloc_bas_projet_web
@@ -243,6 +249,22 @@ body
     justify-content: space-between;
     margin-top: -15%;
 }
+
+#projet_c_bloc1, #projet_c_bloc2
+{
+    display : flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top : 30px;
+}
+
+#projet_c_bloc1 p, #projet_c_bloc2 p 
+{
+    margin: 20px;
+}
+
+
 /*******************************MES PROJETS************************************/
 /*******************************ME CONTACTER************************************/
 
