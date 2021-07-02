@@ -1,0 +1,17 @@
+Charte Graphique Portfolio :
+
+Couleurs : voir .jpeg
+PS : Les couleurs sont adaptées à la vision daltonienne
+
+Utilisation : le orange pour les détails :
+Le but est de faire ressortir un titre ou des éléments importants
+/!\ ne pas en mettre partout : sinon surcharge visuelle /!\
+
+Rester en priorité sur des couleurs neutres telles que blanc ou orange très clair :
+Exemple : #FFBF86 ou #FFD7B9
+
+Eviter le noir et mettre en priorité du brun très foncé à la place
+But : moins de contraste, plus homogène
+
+Police : nesans (Nesans Semi Bold)
+This font is only for NON COMMERCIAL or PERSONAL USE ONLY
