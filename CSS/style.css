@@ -6,6 +6,10 @@ body
     padding-bottom: 15px;
     font-size: 25px;
 }
+    a:visited
+    {
+        color: black;
+    }
 
 .title 
 {
@@ -22,7 +26,7 @@ body
     display: flex;
     align-items: center;
     justify-content: space-around;
-    z-index: 1;
+    z-index: 999;
 }
 
 .navi_element
@@ -104,7 +108,7 @@ body
 {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 76%;
     text-align: justify;
     background-color: rgba(214, 156, 135, 0.5);
     border-radius: 10px;
@@ -138,12 +142,7 @@ body
         animation: oscillate 1s infinite;
     }
 
-    .bouton a:visited
-    {
-        color: black;
-    }
-
-
+    
 /*******************************ACCUEIL************************************/
 /*******************************A PROPOS************************************/
 
@@ -206,8 +205,8 @@ body
     background: linear-gradient(to bottom, rgb(230, 180, 162), rgba(230, 180, 162, 0.8));
     font-size: 35px;
     width: 101%;
-    margin: 15px;
     top : 30px;
+    margin: 10px;
     margin-left: -15px;
     padding: 10px;
     text-align: center;
@@ -220,11 +219,6 @@ body
 }
 
 #img_projet_web
-{
-    width: 50%;
-}
-
-#img_projet_c1
 {
     width: 50%;
 }
@@ -263,6 +257,10 @@ body
     align-items: center;
     justify-content: space-around;
     margin-top : 30px;
+}
+#projet_c_bloc2
+{
+    flex-direction: row-reverse;
 }
 
 #projet_c_bloc1 p, #projet_c_bloc2 p 
@@ -427,11 +425,70 @@ body
     {
         font-size: 30px;
     }
+
+    .image_accueil
+    {
+        border-radius: 5px;
+    }
     /*************ACCUEIL****************/
+    /*************A PROPOS****************/
+    .container_general
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .general_colonne
+    {
+        width: 90%;
+    }
+    /*************A PROPOS****************/
     /*************PROJET****************/
+    .img_projet
+    {
+        max-width: 100%;  
+    }
+
+    .titre_container
+    {
+        top: 25px;
+        z-index: 1;
+    }
+
+    #bloc_bas_projet_web
+    {
+        flex-direction: column;
+    }
+
+    #img_projet_web
+    {
+        width: 100%;
+    }
+
+    #bloc_bas_projet_web p, #bloc_bas_projet_web ul
+    {
+        margin-right: 0px;
+    }   
+
+    #projet_c_bloc1, #projet_c_bloc2
+    {
+        flex-direction: column;
+    }
+
+    .java_img_bloc
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #java_bloc_img_all img
+    {
+        width: 100%;
+    }
+
     #java_bloc_img_all img:hover
     {
-        transform: scale(4) translateY(-50px);   
-        z-index: 1;
+        transform: scale(1);   
+        z-index: 0;
     }
 }
