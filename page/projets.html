@@ -16,8 +16,14 @@
         <header class = "header_accueil" >
             <h1 class = "title">Mes projets</h1>    
         </header>
-        <section>      
-            <div class = "container_projet">
+        <div class = "menu_select_project">
+            <ul class = "select_project">
+                <li class = "active_project"><a href = "#web">Web</a></li>
+                <li><a href = "#langageC">Langage C</a></li>
+                <li><a href = "#gestProj">Gestion de Projet</a></li>
+                <li><a href = "#poo">Programmation Orientée Objet</a></li>
+            </ul>
+            <div class = "container_projet active_project_content" id = "web">
                 <h2 class = "titre_container">
                     Web
                 </h2>
@@ -44,7 +50,7 @@
                 </div>
                 
             </div>
-            <div class = "container_projet">
+            <div class = "container_projet" id = "langageC">
                 <h2 class = "titre_container">
                     Langage C
                 </h2>
@@ -78,7 +84,7 @@
                     </p>
                 </div>
             </div>
-            <div class = "container_projet">
+            <div class = "container_projet" id = "gestProj">
                 <h2 class = "titre_container">
                     Gestion de Projet
                 </h2>
@@ -107,12 +113,12 @@
                 <img src = "../image/projet/gestproj/screen_gestproj.png" alt = "Screenshot du Projet Gestion Projet" class = "img_projet img_projet_gp1" title = "Repository GitHub">
                 <p class = "text_projet">
                     Le site de notre projet reste visible à cette adresse : 
-                    <a href="https://blue1312.wixsite.com/projets-iut-metz">
+                    <a href="https://blue1312.wixsite.com/projets-iut-metz" target="blank">
                         https://blue1312.wixsite.com/projets-iut-metz
                     </a>
                 </p>
             </div>
-            <div class = "container_projet">
+            <div class = "container_projet" id = "poo">
                 <h2 class = "titre_container">
                     Programmation Orientée Objet (POO)
                 </h2>
@@ -142,9 +148,8 @@
                         <img src="../image/projet/java/screen_java6.png" alt="Screenshot Projet Java" class="img_projet">
                     </div>
                 </div>
-                
             </div>
-        </section>
+        </div>
         <footer class ="foot">
             <p>
                 Site réalisé par NATANELIC Romain, Copyright 2021
