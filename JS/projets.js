@@ -27,8 +27,8 @@ var centrageImgProjet = function (image)
         setTimeout(function()
             {
                 imageGrandeEnCours = true; 
-            }, 1000);       
-    }
+            }, 50);                                         //Créer un delay juste pour eviter que la fonction removeCentrageImgProjet, qui se lance en meme temps ne prenne
+    }                                                       // en compte la variable imageGrandeEnCours
 }
 
 var imageGrandeEnCours = false;
@@ -55,6 +55,7 @@ imgAgrandir.forEach(image =>
             centrageImgProjet(image);    
         });
     });
+
 body.addEventListener("click", function () 
     {
         removeCentrageImgProjet();
