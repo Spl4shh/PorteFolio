@@ -67,9 +67,7 @@ body.addEventListener("click", function ()
 //Changement de project_content visible 
 
 var itemMenuProjet = document.querySelectorAll(".select_project a");
-var hash = window.location.hash;
-var a = document.querySelector("a[href = '"+ hash +"']") 
-    
+   
 var changeActive = function (a) 
 {
     var div = a.parentNode.parentNode.parentNode;
@@ -102,11 +100,23 @@ itemMenuProjet.forEach(item =>
         })
     });
 
-if (a !== null && !a.classList.contains("active_project")) 
+
+var hashChange = function () 
 {
+    var hash = window.location.hash;
+    var a = document.querySelector("a[href = '"+ hash +"']") 
+
+    if (a !== null && !a.classList.contains("active_project")) 
+    {
         changeActive(a);
+    }
 }
-    
+
+
+
+
+window.addEventListener("hashchange", hashChange);   //Ajouter l'event listener pour modifier l'active project meme au retour
+hashChange();                                        //Permet de mettre a jours le projet active a la mise a jour de la page
     
     
     /*************************************************************************************/
