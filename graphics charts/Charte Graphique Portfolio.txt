@@ -4,13 +4,13 @@ Couleurs : voir .jpeg
 PS : Les couleurs sont adaptées à la vision daltonienne
 
 Utilisation : 
-  le orange pour les elements clickable ainsi que le titre de la page actuelle :
-    Le but est de faire ressortir un titre et d'apres les techniques de l'interface utilisateur, indiquer a l'utilisateur que certaines zones sont clickable 
-    grace a la couleur principale du site
+  le orange pour les détails :
+    Le but est de faire ressortir un titre ou des éléments importants
     
-    /!\ ne pas en mettre partout : sinon surcharge visuelle et incomprehension/!\
+    /!\ ne pas en mettre partout : sinon surcharge visuelle /!\
 
-Rester en priorité sur des couleurs neutres telles que blanc ou des nuance de gris
+Rester en priorité sur des couleurs neutres telles que blanc ou orange très clair :
+Exemple : #FFBF86 ou #FFD7B9
 
 Eviter le noir et mettre en priorité du brun très foncé à la place
 But : moins de contraste, plus homogène

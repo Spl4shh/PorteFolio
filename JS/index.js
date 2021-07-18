@@ -1,6 +1,3 @@
-console.log("Hello World, My name's Jeff");
-
-
 var listeArticle = document.querySelectorAll(".article_text");
 var listeBouton = document.querySelectorAll(".bouton");
 

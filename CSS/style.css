@@ -2,6 +2,7 @@
 :root
 {
     --primary: rgb(189, 92, 57);
+    --primary-border: 189, 92, 57;
     --primary-lighter: rgb(243, 179, 156);
     --primary-darker: rgb(190, 137, 118);
 
@@ -106,13 +107,6 @@ a:visited, link
 }
 
 
-.underline_link p, .underline_link
-{
-    border-bottom: 2px solid black;
-    transition: border-bottom 0.1s;
-}
-
-
 /*******************************GENERAL************************************/
 /*******************************ACCUEIL************************************/
 
@@ -141,14 +135,12 @@ a:visited, link
 
 .article_text 
 {
-    margin-left: auto;
-    margin-right: auto;
     width: 76%;
     text-align: justify;
     background-color: var(--white-darker);
     border-radius: 10px;
     padding: 10px;
-    transition: all 0.5s
+    transition: all 0.5s;
 }
 
 .article_content
@@ -162,28 +154,34 @@ a:visited, link
 {
     text-align: center;
     text-decoration: none;
-    color: black;
     width: fit-content;
     padding: 10px;
-    background-color: var(--primary-lighter);
+    background-color: var(--white-darker);
     border-radius: 10px;        
     border: 2px solid var(--primary-darker);
     transition: background-color 0.5s;
     z-index: 0;
 }
-    .bouton:hover 
-    {
-        background-color:  var(--primary-darker);
-        animation: oscillate 1s infinite;
-    }
 
 
 .bouton p
 {
+    border-bottom: 2px solid rgba(var(--primary-border), 0);
     margin: 0;
+    color: var(--primary);
+    transition: border-bottom 1s;
 }
 
-    
+.underline_link
+{
+    animation: oscillate 1s infinite;
+}
+
+.article_content .underline_link p 
+{
+    border-bottom: 2px solid rgba(var(--primary-border), 1);
+}
+   
 /*******************************ACCUEIL************************************/
 /*******************************A PROPOS************************************/
 
