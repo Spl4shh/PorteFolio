@@ -117,10 +117,3 @@ var hashChange = function ()
 
 window.addEventListener("hashchange", hashChange);   //Ajouter l'event listener pour modifier l'active project meme au retour
 hashChange();                                        //Permet de mettre a jours le projet active a la mise a jour de la page
-    
-    
-    /*************************************************************************************/
-
-
-
-
