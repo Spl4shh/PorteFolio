@@ -182,6 +182,86 @@ a:visited, link
     border-bottom: 2px solid rgba(var(--primary-border), 1);
 }
    
+.carousel
+{
+    overflow: hidden;
+}
+
+.carousel_container
+{
+    display: flex;
+    transition: transform 0.3s;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel_item
+{
+
+    overflow: hidden;
+}
+
+    .carousel_item::after
+    {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
+.item
+{
+    margin: 30px;
+    background-color: white;
+    box-shadow: 0px 10px 10px var(--grey-darker);
+    transition: transform 0.5s;
+    width: 1000px;
+}
+
+    .item:hover
+    {
+        transform: scale(1.05);
+    }
+
+.item .item_image
+{
+    text-align: center;
+}
+
+.item_body
+{
+    padding: 22px;
+}
+
+
+.carousel_next, .carousel_prev
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #FFF url(../fleche_droite.png) center center no-repeat;
+    background-size: 20px 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 50%;
+    margin-left: auto;
+    right: 10px;
+    margin-top: -20%;
+    transition: transform 0.3s;
+}
+
+.carousel_prev
+{
+    background: #FFF url(../fleche_gauche.png) center center no-repeat;
+    background-size: 20px 20px;
+    margin-right: auto;
+    margin-left: 0;
+    left: 10px;
+}
+
+    .carousel_next:hover, .carousel_prev:hover
+    {
+        transform: scale(1.2);
+    }
 /*******************************ACCUEIL************************************/
 /*******************************A PROPOS************************************/
 
