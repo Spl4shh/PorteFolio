@@ -58,7 +58,6 @@ class Carousel
             return item;
         });
 
-        console.log(this.items);
         this.setStyle();
         this.createNaviguation();
     }
@@ -72,7 +71,6 @@ class Carousel
         {
             item.style.width = ((100 / this.options.slidesVisible) / ratio) + "%"
         });
-        console.log(ratio);
     }
 
 
@@ -89,34 +87,32 @@ class Carousel
 
     next()
     {
-        this.goToItem(this.currentItem + this.options.slidesToScroll)
+        this.goToItem(this.currentItem + this.options.slidesToScroll, false)
     }
 
     prev()
     {
-        this.goToItem(this.currentItem - this.options.slidesToScroll)
+        this.goToItem(this.currentItem - this.options.slidesToScroll, true)
     }
 
     /**
      * Deplace le carousel vers l'element ciblé
      * 
      * @param {Number} index
+     * @param {boolean} previous
      */
-    goToItem(index)
-    {
-        console.log(index + " Index entrée");
-        console.log(this.items.length + " Item length");
-                
+    goToItem(index, previous)
+    {           
+        console.log(index + " index \n" + previous + " /previous if true");
+        
         if(index < 0)
         {
             index = this.items.length - this.options.slidesVisible;
-            console.log("Je suis en haut abruti");
-        } else if (index >= this.items.length || this.items[this.currentItem + this.options.slidesVisible] === undefined)
+        } else if (index >= this.items.length || (this.items[this.currentItem + this.options.slidesVisible] === undefined && !previous) 
+                    || (this.items[this.currentItem - this.options.slidesVisible] === undefined && previous))
         {
             index = 0;
         }
-
-        console.log(index + " index sortie");
 
         let translateX = index * -100 / this.items.length;
 
@@ -135,10 +131,6 @@ class Carousel
         div.setAttribute("class", className);
         return div;
     }
-
-
-
-
 }
 
 new Carousel (document.querySelector("#carousel"), {
