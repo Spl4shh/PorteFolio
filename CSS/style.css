@@ -192,6 +192,7 @@ a:visited, link
     display: flex;
     transition: transform 0.3s;
     transform: translate3d(0, 0, 0);
+    height: fit-content;
 }
 
 .carousel_item
@@ -210,11 +211,10 @@ a:visited, link
 
 .item
 {
-    margin: 30px;
+    margin: 5%;
     background-color: white;
     box-shadow: 0px 10px 10px var(--grey-darker);
     transition: transform 0.5s;
-    width: 1000px;
 }
 
     .item:hover
@@ -224,7 +224,14 @@ a:visited, link
 
 .item .item_image
 {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item .item_image img
+{
+    max-width: 100%;
+    height: auto;
 }
 
 .item_body
@@ -238,7 +245,7 @@ a:visited, link
     position: absolute;
     width: 40px;
     height: 40px;
-    background: #FFF url(../image/fleche_droite.png) center center no-repeat;
+    background: rgb(128, 128, 128) url(../image/fleche_droite.png) center center no-repeat;
     background-size: 20px 20px;
     margin-top: auto;
     margin-bottom: auto;
@@ -251,7 +258,7 @@ a:visited, link
 
 .carousel_prev
 {
-    background: #FFF url(../image/fleche_gauche.png) center center no-repeat;
+    background: rgb(128, 128, 128) url(../image/fleche_gauche.png) center center no-repeat;
     background-size: 20px 20px;
     margin-right: auto;
     margin-left: 0;
@@ -260,8 +267,10 @@ a:visited, link
 
     .carousel_next:hover, .carousel_prev:hover
     {
-        transform: scale(1.2);
+        transform: scale(1.1);
+        cursor: pointer;
     }
+
 /*******************************ACCUEIL************************************/
 /*******************************A PROPOS************************************/
 

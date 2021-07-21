@@ -30,7 +30,7 @@ class Carousel
      * @param {HTMLElement} element 
      * @param {Object} options 
      * @param {Object} options.slidesToScroll Nombre d'element à faire defiler
-     * @param {Object} options.slidesVisible  Nombre d'element visible dans un slide
+     * @param {Object} options.slidesVisible  Nombre d'element visible dans un slide (pour l'instant, fonctionne avec 2) to improve !
      */
     constructor (element, options = {})
     {
@@ -54,10 +54,11 @@ class Carousel
         {
             let item = this.createDivWithClass("carousel_item");
             item.appendChild(child);
-            this.container.appendChild(child);
+            this.container.appendChild(item);
             return item;
         });
-
+ 
+    
         this.setStyle();
         this.createNaviguation();
     }
@@ -70,7 +71,10 @@ class Carousel
         this.items.forEach(item => 
         {
             item.style.width = ((100 / this.options.slidesVisible) / ratio) + "%"
+
         });
+
+       console.log(this.items[1]);
     }
 
 
@@ -102,9 +106,7 @@ class Carousel
      * @param {boolean} previous
      */
     goToItem(index, previous)
-    {           
-        console.log(index + " index \n" + previous + " /previous if true");
-        
+    {                   
         if(index < 0)
         {
             index = this.items.length - this.options.slidesVisible;
@@ -114,9 +116,11 @@ class Carousel
             index = 0;
         }
 
-        let translateX = index * -100 / this.items.length;
+        let translateX = -100 * (index / this.items.length)  ;
 
-        this.container.style.transform = "translate3d(" + translateX + "%, 0, 0)";
+        console.log(translateX -5 + " translate");
+
+        this.container.style.transform = "translate3d(" + translateX  + "%, 0, 0)";
         this.currentItem = index;
     }
 
