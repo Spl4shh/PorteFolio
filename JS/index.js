@@ -73,8 +73,6 @@ class Carousel
             item.style.width = ((100 / this.options.slidesVisible) / ratio) + "%"
 
         });
-
-       console.log(this.items[1]);
     }
 
 
@@ -118,7 +116,6 @@ class Carousel
 
         let translateX = -100 * (index / this.items.length)  ;
 
-        console.log(translateX -5 + " translate");
 
         this.container.style.transform = "translate3d(" + translateX  + "%, 0, 0)";
         this.currentItem = index;
