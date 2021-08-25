@@ -334,7 +334,7 @@ a:visited, link
 .menu_select_project .select_project
 {
     position: sticky;
-    top: 40px;
+    top: 39px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
