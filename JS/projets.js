@@ -24,8 +24,7 @@ var centrageImgProjet = function (image)
         
         image.id = "centre_ecran";
 
-        setTimeout(function()
-            {
+        setTimeout(function(){
                 imageGrandeEnCours = true; 
             }, 50);                                         //Créer un delay juste pour eviter que la fonction removeCentrageImgProjet, qui se lance en meme temps ne prenne
     }                                                       // en compte la variable imageGrandeEnCours
