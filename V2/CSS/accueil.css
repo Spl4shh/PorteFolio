@@ -1,0 +1,19 @@
+.block_accueil{
+      height: 95vh;
+      justify-content: space-around;
+      font-size: 4rem;
+}
+
+.btn_accueil{
+      background: linear-gradient(to right, var(--grey-classic) 50%, var(--grey-lighter) 50%);
+      background-size: 201% 100%;
+      background-position: right;
+      transition: background-position 0.5s, color 0.5s;
+      padding: 6px;
+      text-decoration: none;
+}
+
+      .btn_accueil:hover{
+            background-position: left;
+            color: white;
+      }
