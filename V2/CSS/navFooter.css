@@ -18,6 +18,7 @@
 
 .navi_element
 {
+      height: fit-content;
       background: linear-gradient(to right, var(--grey-classic) 50%, var(--grey-lighter) 50%);
       background-size: 201% 100%;
       background-position: right;
