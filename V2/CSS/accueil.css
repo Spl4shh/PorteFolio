@@ -2,14 +2,13 @@
       height: 100vh;
       justify-content: space-around;
       font-size: 3rem;
-      background: url(../image/background_accueil.jpg);
-      background-size: cover;
+
       font-family: "Roboto", serif;
       text-align: center;
 }
 
 .btn_accueil{
-      background: linear-gradient(to right, rgba(54, 54, 54, 0.5) 50%, rgba(255, 255, 255, 0) 50%);
+      background: linear-gradient(to right, rgba(54, 54, 54, 0.5) 50%, rgba(255, 255, 255, 0.178) 50%);
       background-size: 201% 100%;
       background-position: right;
       transition: background-position 0.75s, color 0.5s;
@@ -24,6 +23,12 @@
 
 .page_body{
       overflow-y: hidden;
+      background: url(../image/background_accueil.jpg);
+      background-size: cover;
+}
+
+.block_menu{
+      height: 100vh;
 }
 
 .text_writing > *{
