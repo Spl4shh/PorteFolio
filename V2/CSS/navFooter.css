@@ -1,23 +1,21 @@
-.navi_bar
-{
+.navi_bar{
       position : sticky;
       background-color: var(--grey-lighter);
       width: 100%;
-      height: 5vh;
+      height: fit-content;
       top: 0px;
       display: flex;
       align-items: center;
       justify-content: space-around;
+      text-align: center;
       font-size: 1.5rem;
 }
 
-.navi_bar a
-{
+.navi_bar a{
       color: var(--black-darker);
 }
 
-.navi_element
-{
+.navi_element{
       height: fit-content;
       background: linear-gradient(to right, var(--grey-classic) 50%, var(--grey-lighter) 50%);
       background-size: 201% 100%;
@@ -26,14 +24,12 @@
       padding: 6px;
 }
 
-      .navi_element:hover
-      {
+      .navi_element:hover{
             background-position: left;
             color: white;
       }
 
-.foot
-{
+.foot{
       position : fixed;
       bottom: 0px;
       background-color: var(--grey-darker);
@@ -46,8 +42,7 @@
       transition: all 2s;
 }
 
-      .foot:hover
-      {
+      .foot:hover{
             transition: all 1s ;
             font-size: 20px;
             color: rgb(204, 204, 204);
@@ -56,4 +51,13 @@
 .foot p
 {
       margin: 0;
+}
+
+
+@media screen and (max-width: 600px)
+{
+      .navi_bar{
+            height: fit-content;
+            font-size: 5vw;
+      }
 }

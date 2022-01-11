@@ -67,11 +67,19 @@ a{
 
 .title{
     font-size: 4rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 600px)
 {
     .title{
         font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+    .title{
+        font-size: 2rem;
     }
 }
