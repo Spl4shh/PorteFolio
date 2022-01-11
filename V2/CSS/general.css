@@ -45,6 +45,9 @@ a{
         text-decoration: underline rgba(0, 0, 0, 1);
     }
 
+ul{
+    margin: 0;
+}
 
 .flex_horizontal{
     display: flex;
