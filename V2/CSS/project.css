@@ -1,3 +1,29 @@
 .page_body{
-      
+      background: url(../image/background_accueil.jpg);
+      background-size: cover;
+      min-height: 95vh;
+}
+
+.list_projet{
+      flex-wrap: wrap;
+      margin-top: 5vw;
+}
+
+.project_card{
+      width: 25vw;
+      margin: 15px;
+}
+
+.project_card > img{
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+}
+
+@media screen and (max-width: 600px)
+{
+      .project_card{
+            width: 35vw;
+            margin: 15px;
+      }
 }
