@@ -70,6 +70,12 @@ a{
     text-align: center;
 }
 
+.page_body{
+    background: url(../image/background_accueil.jpg);
+    background-size: cover;
+    min-height: 95vh;
+}
+
 @media screen and (max-width: 600px)
 {
     .title{
