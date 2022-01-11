@@ -35,7 +35,7 @@
 .menu_card{
       background-color: var(--grey-lighter);
       width: 25%;
-      height: 60%;
+      height: 50%;
       justify-content: space-around;
       overflow: hidden;
       padding: 10px;
@@ -46,8 +46,8 @@
 }
 
 .menu_card_image{
-      width: auto;
-      height: 80%;
+      width: 100%;
+      height: auto;
 }
 
 .text_writing > *{
