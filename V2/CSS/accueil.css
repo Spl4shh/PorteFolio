@@ -34,20 +34,23 @@
 
 .menu_card{
       background-color: var(--grey-lighter);
-      width: 25%;
-      height: 50%;
+      width: 26%;
+      max-height: 30vw;
+      height: fit-content;
       justify-content: space-around;
       overflow: hidden;
       padding: 10px;
       text-align: center;
       border-radius: 5px;
       border:var(--black-classic) 2px solid;
-      font-size: 2rem;
+      font-size: 1.8rem;
 }
 
 .menu_card_image{
-      width: 100%;
+      width: 90%;
       height: auto;
+      border-radius: 5px;
+      margin: 5px 0;
 }
 
 .text_writing > *{
