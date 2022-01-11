@@ -11,13 +11,23 @@
 
 .project_card{
       width: 25vw;
-      margin: 15px;
+      margin: 25px;
+      padding: 10px 0;
+      border-radius: 5px;
+      border: var(--black-classic) 2px solid;
+      background-color: var(--grey-lighter);
+      font-family: "Roboto", serif;
+      font-size: 2vw;
 }
 
 .project_card > img{
-      width: 100%;
-      max-width: 400px;
+      width: 95%;
       height: auto;
+}
+
+.project_name{
+      min-height: max-content;
+      text-align: center;
 }
 
 @media screen and (max-width: 600px)
@@ -25,5 +35,6 @@
       .project_card{
             width: 35vw;
             margin: 15px;
+            font-size: 1.2rem;
       }
 }
