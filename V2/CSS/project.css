@@ -1,0 +1,32 @@
+.project_content{
+      background-color: var(--grey-classic);
+      width: 85%;
+      padding: 15px;
+      margin: 30px;
+      border-radius: 10px;
+}
+
+.project_text{
+      text-align: justify;
+      font-size: 1.8rem;
+      padding: 15px;
+      border-radius: 10px;
+      background-color: var(--grey-lighter);
+}
+
+.img_projet{
+      max-width: 75%;
+      margin: 15px;
+      border-radius: 10px;
+}
+
+@media screen and (max-width: 600px)
+{
+      .project_text{
+            font-size: 1.4rem;
+      }
+
+      .img_projet{
+            max-width: 100%;
+      }
+}
