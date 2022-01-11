@@ -34,7 +34,7 @@
 
 .menu_card{
       background-color: var(--grey-lighter);
-      width: 30%;
+      width: 25%;
       height: 60%;
       justify-content: space-around;
       overflow: hidden;
