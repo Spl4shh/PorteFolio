@@ -2,13 +2,15 @@
       background-color: var(--grey-classic);
       width: 85%;
       padding: 15px;
-      margin: 30px;
+      margin: 15px;
       border-radius: 10px;
 }
 
-.project_text{
+.project_content_block{
       text-align: justify;
       font-size: 1.8rem;
+      margin: 15px;
+      width: 95%;
       padding: 15px;
       border-radius: 10px;
       background-color: var(--grey-lighter);
@@ -27,7 +29,16 @@
 }
 
 .btn_retour > img{
-      width: 5rem;    
+      width: 5rem;
+}
+
+.img_videotheque{
+      width: 25vw;
+      margin: 10px;
+}
+
+ #java_block_img{
+      flex-wrap: wrap;
 }
 
 @media screen and (max-width: 600px)
