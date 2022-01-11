@@ -13,11 +13,11 @@
       background-position: right;
       transition: background-position 0.75s, color 0.5s;
       padding: 6px;
-      text-decoration: none;
 }
 
       .btn_accueil:hover{
             background-position: left;
+            text-decoration: none;
             color: var(--white-darker);
       }
 
