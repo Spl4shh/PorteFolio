@@ -9,7 +9,6 @@
 .project_content_block{
       text-align: justify;
       font-size: 1.8rem;
-      margin: 15px;
       width: 95%;
       padding: 15px;
       border-radius: 10px;
@@ -43,11 +42,19 @@
 
 @media screen and (max-width: 600px)
 {
-      .project_text{
+      .project_content_block{
             font-size: 1.4rem;
       }
 
       .img_projet{
             max-width: 100%;
+      }
+
+      .btn_retour{
+            top: 6vh;
+      }
+
+      .btn_retour > img{
+            width: 2rem;
       }
 }
