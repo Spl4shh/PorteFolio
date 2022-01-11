@@ -44,6 +44,7 @@
       border-radius: 5px;
       border:var(--black-classic) 2px solid;
       font-size: 1.8rem;
+      font-family: "Twitch Font", serif;
 }
 
 .menu_card_image{
