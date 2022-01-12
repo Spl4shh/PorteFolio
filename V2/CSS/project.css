@@ -10,6 +10,7 @@
       text-align: justify;
       font-size: 1.8rem;
       width: 95%;
+      margin: 10px;
       padding: 15px;
       border-radius: 10px;
       background-color: var(--grey-lighter);
@@ -32,11 +33,11 @@
 }
 
 .img_videotheque{
-      width: 25vw;
+      width: 40%;
       margin: 10px;
 }
 
- #java_block_img{
+#java_block_img{
       flex-wrap: wrap;
 }
 
@@ -47,6 +48,7 @@
       }
 
       .img_projet{
+            margin: 0px;
             max-width: 100%;
       }
 
