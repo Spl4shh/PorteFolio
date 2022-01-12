@@ -16,8 +16,14 @@
       background-color: var(--grey-lighter);
 }
 
+.text_block{
+      align-self: baseline;
+      margin: 10px 5px;
+}
+
 .img_projet{
-      max-width: 75%;
+      /* max-width: 75%; */
+      width: 80%;
       margin: 15px;
       border-radius: 10px;
 }
