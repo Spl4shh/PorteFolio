@@ -7,11 +7,11 @@
 
     --black-classic: rgb(31, 31, 31);
     --black-lighter: rgb(85, 85, 85);
-    --black-darker: rgb(12, 12, 11);
+    --black-darker: rgb(5, 5, 5);
 
-    --grey-classic: rgb(87, 82, 80);
-    --grey-lighter: rgb(150, 147, 146);
-    --grey-darker: rgb(56, 53, 51);
+    --grey-classic: rgb(87, 87, 87);
+    --grey-lighter: rgb(155, 155, 155);
+    --grey-darker: rgb(59, 59, 59);
 
     --white-darker: rgb(206, 204, 203);
 }
