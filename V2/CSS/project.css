@@ -1,7 +1,7 @@
 .project_content{
       background-color: var(--grey-classic);
       width: 85%;
-      padding: 15px;
+      /* padding: 0; */
       margin: 15px;
       border-radius: 10px;
 }
@@ -45,6 +45,12 @@
 
 #java_block_img{
       flex-wrap: wrap;
+}
+
+@media screen and (max-width: 900px){
+      .project_content{
+            padding: 0 15px
+      }
 }
 
 @media screen and (max-width: 600px)
