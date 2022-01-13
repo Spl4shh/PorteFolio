@@ -35,11 +35,11 @@
 .menu_card{
       background-color: var(--grey-lighter);
       width: 26%;
-      max-height: 30vw;
+      /* max-height: 30vw; */
       height: fit-content;
       justify-content: space-around;
       overflow: hidden;
-      padding: 10px;
+      /* padding: 10px; */
       text-align: center;
       border-radius: 5px;
       border:var(--black-classic) 2px solid;
@@ -77,13 +77,22 @@
 
       .block_menu{
             flex-direction: column;
+            justify-content: space-evenly;
       }
 
       .menu_card{
-            height: fit-content;
+            height: max-content;
+            min-width: fit-content;
             font-size: 2rem;
       }
       
+      .menu_card_image{
+            width: 10vw
+      }
+}
+
+@media screen and (max-width: 300px)
+{
       .menu_card_image{
             display: none;
       }
