@@ -21,8 +21,8 @@
       margin: 10px 5px;
 }
 
-.img_projet{
-      width: 80%;
+.img_project{
+      max-width: 80%;
       margin: 15px;
       border-radius: 10px;
 }
