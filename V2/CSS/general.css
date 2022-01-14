@@ -80,10 +80,6 @@ p{
     flex-direction: column;
 }
 
-.link{
-    cursor: pointer;
-}
-
 .title{
     max-width: 75%;
     font-size: 4rem;

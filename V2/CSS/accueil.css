@@ -26,6 +26,10 @@
 
 }
 
+.link{
+      cursor: pointer;
+}
+
 .block_menu{
       height: 100vh;
       justify-content: space-around;
