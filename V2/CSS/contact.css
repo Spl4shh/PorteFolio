@@ -1,0 +1,48 @@
+.page_body{
+      justify-content: unset;
+}
+
+.block_card{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items:center;
+      margin: 5vw 0;
+
+}
+
+.card_contact{
+      margin: 10px;
+      padding: 5px 0;
+      font-size: 2.6rem;
+      width: fit-content;
+      overflow: hidden;
+      overflow-wrap: break-word;
+      justify-content: space-between;
+      flex-direction: column;
+      border: var(--black-classic) 2px solid;
+      background-color: var(--white-darker);
+}
+
+.card_contact > * {
+      margin: 0 10px;
+}
+.img_reseau{
+      width: 15vw;
+      min-width: 100px;
+}
+
+@media screen and (max-width: 600px)
+{
+    .card_contact{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 400px)
+{
+      .card_contact{
+            font-size: 0.6rem;
+            flex-direction: column;
+      }
+}
