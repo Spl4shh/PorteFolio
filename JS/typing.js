@@ -23,15 +23,6 @@ function type(words, index){
     var string = words[index];
     if(string.length <= i++){
       element.innerText = string;
-      if(words[index] != words[words.length-1]) {
-      	setTimeout(function() {
-          reverseType(words, index);
-        },500);
-      }else{
-        setTimeout(function() {
-          reverseType(words, index);
-        },2000);
-      }
       return;
     }
     element.innerText = string.substring(0,i);
